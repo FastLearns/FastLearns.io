@@ -37,29 +37,31 @@ navbar{
     margin: 0 0 0 5em;
 }
 
-.nav{
+nav{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 3em 0 0;
 }
-.nav ul li{
+
+nav ul li{
     display: inline;
 }
 
-.nav ul li a{
+nav ul li a{
     transition: .2s ease-in-out;
     color: #fff;
     border-radius: 1em;
     font-weight: 500;
     padding: .5em .7em;
+    text-decoration: none;
 }
 
 
-.nav ul li a:hover{
-    color: #0e47c7;
+nav ul li a:hover{
+    color: #2667da;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.1em;
     transition: .2s ease-in-out;
     padding: .5em .7em;
     background-color: #fff;
@@ -135,7 +137,8 @@ navbar{
     color: #2667da;
     flex: 40%;
     border-radius: 3em;
-    z-index: 1;
+    box-shadow: 0 0 10em #00000017;
+    z-index: -3;
 }
 
 .flexLinks{
@@ -152,6 +155,7 @@ navbar{
     border-radius: 3em;
     color: #fff;
     font-size: clamp(0.8125rem, 0.2344rem + 1.25vw, 1rem);
+    text-decoration: none;
 }
 .flexart-3{
     width: 35%;
@@ -167,6 +171,48 @@ navbar{
     filter: drop-shadow(0 0 2em #00000033);
     z-index: 50;
 }
+
+.section-2{
+    width: 100%;
+    display: flex;
+    margin: 5vh 0vh;
+}
+
+.article-2{
+    background-color: #fff;
+    width: 50%;
+    padding: 2em;
+    margin: 0 5vh;
+}
+.article-2 h1{
+    text-align: center;
+    color: #2667da;
+}
+.article-2 p{
+    color: #2667da;
+    font-size: clamp(0.8125rem, 0.2344rem + 1.25vw, 1rem);
+}
+.flexSquare{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: #2667da;
+    border-radius: 3em;
+}
+
+.right, .left{
+    width: 50%;
+}
+
+.right{
+    background-color: #106aff;
+}
+
+.left{
+    background-color: #2667da;
+    border-radius: 3em;
+}
+
 
 footer{
     display: flex;

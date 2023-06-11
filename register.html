@@ -9,39 +9,51 @@
     <link rel="stylesheet" href="css-register/style.css">
     <title>REGISTRARME | FastLearn</title>
 </head>
+
 <body>
-    <div class="content-form">
-        <form action="">
-            <Label for="">Nombres completos</Label>
-            <input type="text" placeholder="Ejemplo: Pepito Peréz">
-            <Label for="">Ingrese su rol</Label>
-            <select name="" id="">
-                <option value="">Estudiante</option>
-                <option value="">Profesor</option>
-                <option value="">Acudiente</option>
-            </select>
-            <label for="">Ingrese su edad</label>
-            <input type="number" min="12" max="20">
-            <label for="">Ingrese su correo</label>
-            <input type="email" placeholder="example@gmail.com">
-            <label for="">Confirmar correo</label>
-            <input type="email" placeholder="example@gmail.com">
-            <label for="">Ingrese su contraseña</label>
-            <input type="password">
-            <div class="btns">
-                <button type="submit">Registrarme</button>
-                <button type="reset">Reiniciar</button>
-            </div>
-        </form>
-        <div class="content-other">
-            <div class="cont-rigth">
-                <h1>Ingresa tus datos</h1>
-                <p>para comenzar a aprender con nosotros</p>
-                <a href="./index.html"><img src="./img/LogoFastLearn.png" alt="" srcset=""></a>
-            </div>
-            <div class="link"><a href="login.html">Ya tengo una cuenta existente</a></div>
-        </div>
-    </div>
+    <navbar>
+        <figure class="flexLogo">
+            <img src="img/LogoFastLearn.png" alt="">
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="">SECCIÓN1</a></li>
+                <li><a href="">SECCIÓN2</a></li>
+                <li><a href="">SECCION3</a></li>
+                <li><a href="">SECCION5</a></li>
+            </ul>
+        </nav>
+    </navbar>
+    
+    <section class="flexCont">
+        <article class="flexText">
+            <h1>BIENVENIDO DE NUEVO A FASTLEARN</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, expedita rem facere repudiandae deserunt fugit et quis dolorum sunt tempore adipisci! At labore architecto veritatis aut praesentium quos maxime quidem!</p>
+        </article>
+        <section class="flexForm">
+            <form action="">
+                <Label for="">Nombres completos</Label>
+                <input type="text">
+                <Label for="">Ingrese su rol</Label>
+                <select name="" id="">
+                    <option value="">Estudiante</option>
+                    <option value="">Profesor</option>
+                    <option value="">Acudiente</option>
+                </select>
+                <label for="">Ingrese su edad</label>
+                <input type="number" min="12" max="20">
+                <label for="">Ingrese su correo</label>
+                <input type="email">
+                <label for="">Ingrese su contraseña</label>
+                <input type="password">
+                <div class="btns">
+                    <button type="submit">Registrarme</button>
+                    <button type="reset">Reiniciar</button>
+                </div>
+            </form>
+        </section>
+    </section>
 </body>
 
 </html>
