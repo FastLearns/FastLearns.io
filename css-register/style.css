@@ -13,6 +13,9 @@
     --color3: #fff;
     --bg-color: #fff;
     --coloricon: #00becd;
+    --colorhover: #fff;
+    --colorRes: #f5f5f5;
+    
 }
 
 
@@ -22,13 +25,17 @@
     --color1: #fff;
     --color2: #1e293b;
     --color3: #1e293b;
+    --bg-color: #0f172a;
     --coloricon: #fff;
+    --colorhover: #344155;
+    --colorRes: #141d2c;
 }
 
 
 body{
     background-color: var(--bg-color);
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -39,8 +46,14 @@ html::-webkit-scrollbar{
 
 body{
     height: 100vh;
+    background-color: var(--bg-color);
 }
 
+header{
+    width: 100%;
+    height: 15.22vh;
+    background-color: var(--bg-color);
+}
 
 navbar {
     width: 100%;
@@ -99,12 +112,6 @@ navbar {
     text-decoration: none;
 }
 
-#darkMode-icon{
-    cursor: pointer;
-    font-size: 2em;
-    color: var(--coloricon);
-    transition: 1s ease-in-out;
-}
 
 .nav-main ul li a:hover {
     color: var(--color3);
@@ -115,27 +122,57 @@ navbar {
     background-color: var(--colorMain);
 }
 
+.nav-main .nav-menu li a i{
+    margin: 0 2vh 0 0;
+}
+
+#darkMode-icon{
+    cursor: pointer;
+    font-size: 2em;
+    color: var(--coloricon);
+    transition: 1s ease-in-out;
+    margin: 0 2vh;
+}
+.nav-toggle{
+    background-color: transparent;
+    display: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#menu-right-icon{
+    font-size: 2em;
+    color: var(--coloricon);
+    transition: 1s ease-in-out;
+}
 
 .flexbox{
+    width: 100%;
+    height: 35em;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .flexText{
-    margin: 0 5vh;
+    width: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 0 0 0 7vh;
 }
+
 .flexText h1{
-    font-size: clamp(2rem, 1.2292rem + 1.6667vw, 2.25rem);
+    font-size: clamp(2.5rem, 2.469rem + 0.0669vw, 3.125rem);
+    text-align: left;
     color: var(--color1);
 }
 
-.flexText p{
-    color: var(--color1);
-    font-size: clamp(0.8125rem, 0.2344rem + 1.25vw, 1rem);
+.flexText p {
+    width: 100%;
+    font-size: clamp(1.125rem, 1.1157rem + 0.0201vw, 1.3125rem);
+    color: var(--colorMain);
 }
 
 .flexForm{
@@ -145,7 +182,10 @@ navbar {
     margin: 0 5vh;
 }
 
-form{
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--color1);
     padding: 2em;
     margin: 0 1em;
@@ -156,6 +196,7 @@ label{
     display: block;
     margin: 0.5em 0 0 0;
     color: var(--bg-color);
+    cursor: pointer;
 }
 
 input{
@@ -202,4 +243,233 @@ select{
     background-color: var(--bg-color);
     color: var(--color1);
     font-weight: 500;
+
+}
+
+form a{
+    text-align: center;
+    color: var(--color3);
+}
+@media screen and (max-width: 1200px){
+    .flexLogo{
+        width: 50%;
+    }
+
+    .flexLogo img{
+        width: 100%;
+    }
+
+    .nav-main{
+        width: 100%;
+        justify-content: flex-end;
+        margin: 0 2em 0 0;
+    }
+    .flexbox{
+        width: 100%;
+        height: 50em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .flexText{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4vh 0;
+        text-align: center;
+    }
+
+    .flexText h1{
+        font-size: 2em;
+    }
+    
+}
+
+
+@media screen and (max-width: 980px){
+
+    .flexLogo{
+        display: none;
+    }
+
+    .nav-main{
+        width: 100%;
+        justify-content: flex-end;
+        margin: 0 2em 0 0;
+    }
+
+    .flexbox{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .flexText{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4vh 0;
+        text-align: center;
+    }
+
+    .flexText h1{
+        font-size: 2em;
+    }
+    
+}
+
+@media screen and (max-width: 740px) {
+    
+    .flexLogo{
+        display: none;
+    }
+
+    .nav-main{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        z-index: 200;
+    }
+
+    .flexbox{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .flexText{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4vh 0;
+        text-align: center;
+    }
+
+    .flexText h1{
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 580px){
+
+    .flexLogo{
+        display: none;
+    }
+
+    .nav-main{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        z-index: 200;
+    }
+
+    .nav-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: calc(100vh);
+        background-color: var(--colorRes);
+        transition: left 0.3s;
+        left: 100%;
+        z-index: 50;
+    }
+
+    .btns-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0vh 2em 0 0;
+        z-index: 100;
+    }
+
+    #darkMode-icon{
+        margin: 0 .5em 0 0;
+    }
+
+    .nav-main .nav-menu li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 3vh;
+    }
+
+    .nav-main .nav-menu li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: none;
+    }
+    .nav-main .nav-menu li a i{
+        font-size: 2em;
+        margin: 0 .4em 0 0;
+    }
+    .nav-main .nav-menu li:hover{
+        background-color: var(--colorhover);
+    }
+
+    .nav-toggle{
+        display: flex;
+        transition: 1s ease;
+    }
+
+    .nav-menu_visible{
+        left: 0%;   
+    }
+    .nav-fixed{
+        position: fixed;
+        transition: 1s ease;
+    }
+    
+    .flexbox{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .flexText{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4vh 0;
+        text-align: center;
+    }
+
+    .flexText h1{
+        font-size: 1.8em;
+        text-align: center;
+    }
+    .flexForm{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    form{
+        width: 90%;
+        padding: 3vh;
+    }
+
+
+
 }

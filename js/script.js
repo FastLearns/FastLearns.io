@@ -22,7 +22,12 @@ if(localStorage.getItem('dark-mode') === 'true'){
 
 const navToggle = document.querySelector(".nav-toggle")
 const navMenu = document.querySelector(".nav-menu")
+const navFix = document.querySelector(".btns-nav")
+const navIcon = document.querySelector(".bx-menu-alt-right")
 
 navToggle.addEventListener("click",() => {
     navMenu.classList.toggle("nav-menu_visible");
+    navFix.classList.toggle("nav-fixed")
+    navIcon.classList.toggle("bx-x-circle")
 });
+

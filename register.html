@@ -14,51 +14,65 @@
     <header class="header">
 
         <navbar>
-    
-          <figure class="flexLogo">
-            <a href="index.html"><img src="img/LogoFastLearn.png" alt="" id="imgchange"></a>
-          </figure>
-    
-          <nav class="nav-main">
-            <ul>
-              <li> <a href="index.html">INICIO</a> </li>
-              <li> <a href="">TUTORIAL</a> </li>
-              <li> <a href="register.html">ACERCA DE</a> </li>
-              <li> <a href="login.html">INGRESAR</a> </li>
-              <li><div class="bx bx-moon" id="darkMode-icon"></div></li>
-            </ul>
-          </nav>  
-    
-    
-        </navbar>    
-    <section class="flexbox">
-        <article class="flexText">
-            <h1>BIENVENIDO DE NUEVO A FASTLEARN</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, expedita rem facere repudiandae deserunt fugit et quis dolorum sunt tempore adipisci! At labore architecto veritatis aut praesentium quos maxime quidem!</p>
-        </article>
-        <section class="flexForm">
-            <form action="">
-                <Label for="">Nombres completos</Label>
-                <input type="text">
-                <Label for="">Ingrese su rol</Label>
-                <select name="" id="">
-                    <option value="">Estudiante</option>
-                    <option value="">Profesor</option>
-                    <option value="">Acudiente</option>
-                </select>
-                <label for="">Ingrese su edad</label>
-                <input type="number" min="12" max="20">
-                <label for="">Ingrese su correo</label>
-                <input type="email">
-                <label for="">Ingrese su contraseña</label>
-                <input type="password">
-                <div class="btns">
-                    <button type="submit">Registrarme</button>
-                    <button type="reset">Reiniciar</button>
+
+            <figure class="flexLogo">
+                <a href="index.html"><img src="img/LogoFastLearn.png" alt="" id="imgchange"></a>
+            </figure>
+
+            <nav class="nav-main">
+                <ul class="nav-menu">
+                    <li> <a href="index.html"><i class='bx bx-home-alt'></i>INICIO</a> </li>
+                    <li> <a href=""><i class='bx bx-book-bookmark'></i>ACERCA DE</a> </li>
+                    <li> <a href="register.html"><i class='bx bxs-registered'></i>REGISTRO</a> </li>
+                    <li> <a href="login.html"><i class='bx bxs-user-account'></i>INGRESAR</a> </li>
+                </ul>
+
+                <div class="btns-nav">
+                    <div class="bx bx-moon" id="darkMode-icon">
+
+                    </div>
+
+                    <button class="nav-toggle">
+                        <div class="bx bx-menu-alt-right" id="menu-right-icon"></div>
+                    </button>
+
                 </div>
-            </form>
+            </nav>
+
+        </navbar>
+    </header>
+        <section class="flexbox">
+            <article class="flexText">
+                <h1>BIENVENIDO DE NUEVO A FASTLEARN</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, expedita rem facere
+                    repudiandae deserunt fugit et quis dolorum sunt tempore adipisci! At labore architecto veritatis aut
+                    praesentium quos maxime quidem!</p>
+            </article>
+            <section class="flexForm">
+                <form action="">
+                    <Label for="nombre">Nombres completos</Label>
+                    <input type="text" name="" id="nombre">
+                    <Label for="opciones">Ingrese su rol</Label>
+                    <select name="opciones" id="opciones">
+                        <option value="">Estudiante</option>
+                        <option value="">Profesor</option>
+                        <option value="">Acudiente</option>
+                    </select>
+                    <label for="edad">Ingrese su edad</label>
+                    <input type="number" min="12" max="20" name="edad" id="edad">
+                    <label for="email">Ingrese su correo</label>
+                    <input type="email" name="email" id="email">
+                    <label for="pass">Ingrese su contraseña</label>
+                    <input type="password" name="pass" id="pass">
+                    <div class="btns">
+                        <button type="submit">Registrarme</button>
+                        <button type="reset">Reiniciar</button>
+                    </div>
+                    <a href="login.html"> - Ya tengo una cuenta existente - </a>
+                </form>
+            </section>
         </section>
-    </section>
     <script src="js/script.js"></script>
 </body>
+
 </html>

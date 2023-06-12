@@ -1,37 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon/logofavicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css-login/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>INICIAR SESIÓN | FastLearn</title>
 </head>
 <body>
-    <div class="content-form">
-        <div class="content-other">
-            <div class="cont-rigth">
-                <h1>SENA</h1>
-                <iframe src="https://www.sena.edu.co/" frameborder="0"></iframe>
-            </div>
-            <div class="link"><a href="register.html">No tengo una cuenta existente</a></div>
-        </div>
-        <form action="">
-            <Label for="">Ingrese su rol</Label>
-            <select name="" id="">
-                <option value="">Estudiante</option>
-                <option value="">Profesor</option>
-                <option value="">Acudiente</option>
-            </select>
-            <label for="">Ingrese su correo</label>
-            <input type="email" placeholder="example@gmail.com">
-            <label for="">Ingrese su contraseña</label>
-            <input type="password">
-            <div class="btns">
-                <button type="submit">INICIAR SESIÓN</button>
-            </div>
-        </form>
-    </div>
+    <header class="header">
+
+        <navbar>
+
+            <figure class="flexLogo">
+                <a href="index.html"><img src="img/LogoFastLearn.png" alt="" id="imgchange"></a>
+            </figure>
+
+            <nav class="nav-main">
+                <ul class="nav-menu">
+                    <li> <a href="index.html"><i class='bx bx-home-alt'></i>INICIO</a> </li>
+                    <li> <a href=""><i class='bx bx-book-bookmark'></i>ACERCA DE</a> </li>
+                    <li> <a href="register.html"><i class='bx bxs-registered'></i>REGISTRO</a> </li>
+                    <li> <a href="login.html"><i class='bx bxs-user-account'></i>INGRESAR</a> </li>
+                </ul>
+
+                <div class="btns-nav">
+                    <div class="bx bx-moon" id="darkMode-icon">
+
+                    </div>
+
+                    <button class="nav-toggle">
+                        <div class="bx bx-menu-alt-right" id="menu-right-icon"></div>
+                    </button>
+
+                </div>
+            </nav>
+
+        </navbar>
+    </header>
+        <section class="flexbox">
+            <article class="flexText">
+                <h1>BIENVENIDO DE NUEVO A FASTLEARN</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, expedita rem facere
+                    repudiandae deserunt fugit et quis dolorum sunt tempore adipisci! At labore architecto veritatis aut
+                    praesentium quos maxime quidem!</p>
+            </article>
+            <section class="flexForm">
+                <form action="">
+                    <Label for="opciones">Ingrese su rol</Label>
+                    <select name="opciones" id="opciones">
+                        <option value="">Estudiante</option>
+                        <option value="">Profesor</option>
+                        <option value="">Acudiente</option>
+                    </select>
+                    <label for="email">Ingrese su correo</label>
+                    <input type="email" name="email" id="email">
+                    <label for="pass">Ingrese su contraseña</label>
+                    <input type="password" name="pass" id="pass">
+                    <div class="btns">
+                        <button type="submit">Iniciar sesión</button>
+                        <button type="reset">Reiniciar</button>
+                    </div>
+                    <a href="register.html"> - No tengo una cuenta existente - </a>
+                </form>
+            </section>
+        </section>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -19,6 +19,7 @@
 
 
 .darkMode{
+    --bg-color: #0f172a;
     --colorMain: #fff;
     --color1: #fff;
     --color2: #1e293b;
@@ -29,11 +30,16 @@
     --colorRes: #141d2c;
 }
 
-html {
+
+body{
+    background-color: var(--bg-color);
+}
+
+html{
     scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar {
+html::-webkit-scrollbar{
     width: 0em;
 }
 
@@ -93,7 +99,6 @@ navbar {
     display: inline;
 }
 
-
 .nav-main ul li a{
     transition: .2s ease-in-out;
     color: var(--colorMain);
@@ -102,6 +107,7 @@ navbar {
     padding: .5em .7em;
     text-decoration: none;
 }
+
 
 .nav-main ul li a:hover {
     color: var(--color3);
@@ -112,11 +118,16 @@ navbar {
     background-color: var(--colorMain);
 }
 
+.nav-main .nav-menu li a i{
+    margin: 0 2vh 0 0;
+}
+
 #darkMode-icon{
     cursor: pointer;
     font-size: 2em;
     color: var(--coloricon);
     transition: 1s ease-in-out;
+    margin: 0 2vh;
 }
 .nav-toggle{
     background-color: transparent;
@@ -131,7 +142,7 @@ navbar {
     transition: 1s ease-in-out;
 }
 
-.flexbox {
+.flexbox{
     width: 100%;
     height: 35em;
     position: relative;
@@ -140,8 +151,7 @@ navbar {
     align-items: center;
 }
 
-
-.flexText {
+.flexText{
     width: 50%;
     display: flex;
     justify-content: center;
@@ -468,7 +478,7 @@ footer {
         align-items: center;
         width: 100%;
         position: absolute;
-        z-index: 100;
+        z-index: 200;
     }
 
     .nav-menu{
@@ -479,8 +489,7 @@ footer {
         position: fixed;
         top: 0;
         width: 100%;
-        height: calc(100%);
-        overflow-y: auto;
+        height: calc(100vh);
         background-color: var(--colorRes);
         transition: left 0.3s;
         left: 100%;
@@ -509,19 +518,28 @@ footer {
     .nav-main .nav-menu li a{
         display: flex;
         justify-content: center;
+        align-items: center;
         background-color: none;
     }
-
+    .nav-main .nav-menu li a i{
+        font-size: 2em;
+        margin: 0 .4em 0 0;
+    }
     .nav-main .nav-menu li:hover{
         background-color: var(--colorhover);
     }
 
     .nav-toggle{
         display: flex;
+        transition: 1s ease;
     }
 
     .nav-menu_visible{
         left: 0%;   
+    }
+    .nav-fixed{
+        position: fixed;
+        transition: 1s ease;
     }
     
     .flexbox{
