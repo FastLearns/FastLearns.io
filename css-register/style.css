@@ -1,10 +1,33 @@
-*{
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     transition: .2s ease-in-out;
 }
 
+:root{
+    --colorMain: #00becd;
+    --color1: #038a8f;
+    --color2: #c1fdff;
+    --color3: #fff;
+    --bg-color: #fff;
+    --bg-section: #fff;
+}
+
+
+.darkMode{
+    --bg-color: #0f172a;
+    --colorMain: #fff;
+    --color1: #fff;
+    --color2: #1e293b;
+    --color3: #00becd;
+}
+
+
+body{
+    background-color: var(--bg-color);
+}
 html{
     scroll-behavior: smooth;
 }
@@ -18,57 +41,81 @@ body{
 }
 
 
-navbar{
-    height: 15.22vh;
+navbar {
     width: 100%;
+    height: 15.22vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.flexLogo{
+.flexLogo {
     width: 50%;
+    height: 15.22vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.flexLogo img{
-    max-width: 30%;
+.flexLogo a{
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flexLogo a img {
+    max-width: 100%;
     margin: 0 0 0 5em;
 }
 
-nav{
+.nav-main {
+    width: 50%;
+    height: 15.22vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 3em 0 0;
 }
 
-nav ul li{
+
+.nav-main ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-main ul li {
     display: inline;
 }
 
-nav ul li a{
+.nav-main ul li a{
     transition: .2s ease-in-out;
-    color: #0e47c7;
+    color: var(--colorMain);
     border-radius: 1em;
     font-weight: 500;
     padding: .5em .7em;
     text-decoration: none;
 }
 
+#darkMode-icon{
+    cursor: pointer;
+    font-size: 2em;
+    color: #00becd;
+    transition: 1s ease-in-out;
+}
 
-nav ul li a:hover{
-    color: #fff;
+.nav-main ul li a:hover {
+    color: var(--color3);
     text-decoration: none;
     font-size: 1.1em;
     transition: .2s ease-in-out;
     padding: .5em .7em;
-    background-color: #2667da;
+    background-color: var(--colorMain);
 }
 
-.flexCont{
+
+.flexbox{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,11 +129,11 @@ nav ul li a:hover{
 }
 .flexText h1{
     font-size: clamp(2rem, 1.2292rem + 1.6667vw, 2.25rem);
-    color: #2667da;
+    color: var(--color1);
 }
 
 .flexText p{
-    color: #2667da;
+    color: var(--color1);
     font-size: clamp(0.8125rem, 0.2344rem + 1.25vw, 1rem);
 }
 
@@ -98,7 +145,7 @@ nav ul li a:hover{
 }
 
 form{
-    background-color: #2667da;
+    background-color: var(--color1);
     padding: 2em;
     margin: 0 1em;
     border-radius: 1em;
@@ -107,7 +154,7 @@ form{
 label{
     display: block;
     margin: 0.5em 0 0 0;
-    color: #fff;
+    color: var(--bg-color);
 }
 
 input{
@@ -116,13 +163,13 @@ input{
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: .1em solid #fff;
+    border-bottom: .1em solid var(--color2);
     background-color: transparent;
     color: #fff;
 }
 
 input::placeholder{
-    color: #fff;
+    color: var(--color1);
     font-size: clamp(0.8125rem, 0.2344rem + 1.25vw, 1rem);
 }
 
@@ -132,7 +179,10 @@ select{
     outline: none;
     border-radius: .4em;
     border: none;
+    background-color: var(--bg-color);
+    color: var(--color1);
 }
+
 .btns{
     display: flex;
     justify-content: center;
@@ -148,4 +198,7 @@ select{
     outline: none;
     border: none;
     cursor: pointer;
+    background-color: var(--bg-color);
+    color: var(--color1);
+    font-weight: 500;
 }

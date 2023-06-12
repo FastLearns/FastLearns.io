@@ -7,26 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon/logofavicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css-register/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>REGISTRARME | FastLearn</title>
 </head>
 
 <body>
-    <navbar>
-        <figure class="flexLogo">
-            <img src="img/LogoFastLearn.png" alt="">
-        </figure>
-        <nav>
-            <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="">SECCIÓN1</a></li>
-                <li><a href="">SECCIÓN2</a></li>
-                <li><a href="">SECCION3</a></li>
-                <li><a href="">SECCION5</a></li>
-            </ul>
-        </nav>
-    </navbar>
+    <header class="header">
+
+        <navbar>
     
-    <section class="flexCont">
+          <figure class="flexLogo">
+            <a href="index.html"><img src="img/LogoFastLearn.png" alt="" id="imgchange"></a>
+          </figure>
+    
+          <nav class="nav-main">
+            <ul>
+              <li> <a href="index.html">INICIO</a> </li>
+              <li> <a href="">TUTORIAL</a> </li>
+              <li> <a href="register.html">ACERCA DE</a> </li>
+              <li> <a href="login.html">INGRESAR</a> </li>
+              <li><div class="bx bx-moon" id="darkMode-icon"></div></li>
+            </ul>
+          </nav>  
+    
+    
+        </navbar>    
+    <section class="flexbox">
         <article class="flexText">
             <h1>BIENVENIDO DE NUEVO A FASTLEARN</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, expedita rem facere repudiandae deserunt fugit et quis dolorum sunt tempore adipisci! At labore architecto veritatis aut praesentium quos maxime quidem!</p>
@@ -54,6 +60,6 @@
             </form>
         </section>
     </section>
+    <script src="js/script.js"></script>
 </body>
-
 </html>
