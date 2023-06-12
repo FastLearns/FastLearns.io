@@ -12,7 +12,7 @@
     --color2: #c1fdff;
     --color3: #fff;
     --bg-color: #fff;
-    --bg-section: #fff;
+    --coloricon: #00becd;
 }
 
 
@@ -21,7 +21,8 @@
     --colorMain: #fff;
     --color1: #fff;
     --color2: #1e293b;
-    --color3: #00becd;
+    --color3: #1e293b;
+    --coloricon: #fff;
 }
 
 
@@ -101,7 +102,7 @@ navbar {
 #darkMode-icon{
     cursor: pointer;
     font-size: 2em;
-    color: #00becd;
+    color: var(--coloricon);
     transition: 1s ease-in-out;
 }
 
