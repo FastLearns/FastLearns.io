@@ -18,3 +18,11 @@ if(localStorage.getItem('dark-mode') === 'true'){
     document.body.classList.remove('darkMode');
     darkModeIcon.classList.remove('bx-sun');
 }
+
+
+const navToggle = document.querySelector(".nav-toggle")
+const navMenu = document.querySelector(".nav-menu")
+
+navToggle.addEventListener("click",() => {
+    navMenu.classList.toggle("nav-menu_visible");
+});
