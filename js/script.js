@@ -38,3 +38,11 @@ window.onload = function (){
 };
 
 
+let btnMain = document.querySelector('#btn');
+let sidebar = document.querySelector('.flexsidebar');
+
+btnMain.onclick = function (){
+    sidebar.classList.toggle('active');
+};
+
+
