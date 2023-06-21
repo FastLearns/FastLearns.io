@@ -126,7 +126,7 @@ body {
     box-shadow: none;
 }
 
-.flexbox {
+.flexbox{
     width: 100%;
     height: 35em;
     position: relative;
@@ -135,7 +135,7 @@ body {
     align-items: center;
 }
 
-.flexText {
+.flexText{
     width: 50%;
     display: flex;
     justify-content: center;
@@ -143,79 +143,90 @@ body {
     margin: 0 0 0 7vh;
 }
 
-.flexText h1 {
+.flexText h1{
     font-size: clamp(2.5rem, 2.469rem + 0.0669vw, 3.125rem);
     text-align: left;
     color: var(--color1);
 }
 
 .flexText p {
-    width: 70%;
+    width: 100%;
     font-size: clamp(1.125rem, 1.1157rem + 0.0201vw, 1.3125rem);
     color: var(--colorMain);
 }
 
-.flexImg {
-    width: 50%;
+.flexForm{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0 5vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color1);
+    padding: 2em;
+    margin: 0 1em;
+    border-radius: 1em;
+}
+
+label{
+    display: block;
+    margin: 0.5em 0 0 0;
+    color: var(--bg-color);
+    cursor: pointer;
+}
+
+input{
+    width: 30em;
+    height: 3em;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: .1em solid var(--color2);
+    background-color: transparent;
+    color: #fff;
+}
+
+input::placeholder{
+    color: var(--color1);
+    font-size: clamp(0.8125rem, 0.2344rem + 1.25vw, 1rem);
+}
+
+select{
+    width: 100%;
+    height: 3em;
+    outline: none;
+    border-radius: .4em;
+    border: none;
+    background-color: var(--bg-color);
+    color: var(--color1);
+}
+
+.btns{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 4vh;
+    padding: 1em;
 }
 
-.flexImg img {
-    max-width: 100%;
-    width: 100%;
-    pointer-events: none;
+.btns button{
+    width: 8em;
+    margin: 0 1em;
+    padding: .7em;
+    border-radius: 1em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: var(--bg-color);
+    color: var(--color1);
+    font-weight: 500;
+
 }
 
-
-
-
-@media screen and (max-width: 1200px) {}
-
-@media screen and (max-width: 980px) {}
-
-@media screen and (max-width: 780px) {
-    .flexbox {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .flexText {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 0;
-    }
-
-    .flexText h1 {
-        text-align: center;
-    }
-
-    .flexImg {
-        margin: 2vh 0;
-    }
-}
-
-
-@media screen and (max-width: 580px) {
-
-    .custom-loader {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background:
-            radial-gradient(farthest-side, #00BECD 94%, #0000) top/8px 8px no-repeat,
-            conic-gradient(#0000 30%, #00BECD);
-        -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
-        animation: s3 1s infinite linear;
-    }
-
-    @keyframes s3 {
-        100% {
-            transform: rotate(1turn)
-        }
-    }
+form a{
+    text-align: center;
+    color: var(--color3);
 }
